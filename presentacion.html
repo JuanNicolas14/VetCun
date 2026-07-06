@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentación - VetCUN</title>
+  <style>
+    :root {
+      --bg: #f4efe7;
+      --panel: #ffffff;
+      --primary: #2f6f6d;
+      --accent: #d97852;
+      --text: #1f2937;
+      --muted: #5b6675;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg), #faf7f1);
+    }
+
+    .slide {
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+      padding: 3rem;
+      box-sizing: border-box;
+      border-bottom: 1px solid rgba(47, 111, 109, 0.1);
+    }
+
+    .card {
+      width: min(960px, 100%);
+      margin: 0 auto;
+      background: var(--panel);
+      border-radius: 28px;
+      padding: 2.5rem;
+      box-shadow: 0 18px 40px rgba(31, 41, 55, 0.1);
+    }
+
+    h1, h2 {
+      font-family: Georgia, serif;
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    .tag {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    ol, ul {
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .panel {
+      background: #f8f4ee;
+      border-radius: 20px;
+      padding: 1.2rem;
+    }
+
+    a {
+      color: var(--primary);
+    }
+
+    @media (max-width: 720px) {
+      .slide {
+        padding: 1rem;
+      }
+
+      .card,
+      .grid {
+        padding: 1.25rem;
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="slide">
+    <div class="card">
+      <p class="tag">Portada</p>
+      <h1>VetCUN</h1>
+      <p>Clínica veterinaria de atención integral para perros y gatos.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="card">
+      <p class="tag">Índice</p>
+      <ol>
+        <li>Presentación</li>
+        <li>Servicios</li>
+        <li>Beneficios</li>
+        <li>Recomendaciones</li>
+        <li>Referencias APA</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="card">
+      <p class="tag">Servicios</p>
+      <h2>Atención clínica y preventiva</h2>
+      <div class="grid">
+        <div class="panel">
+          <h2>Consulta general</h2>
+          <p>Valoración básica, control de signos vitales y orientación médica inicial.</p>
+        </div>
+        <div class="panel">
+          <h2>Vacunación</h2>
+          <p>Esquemas de prevención y seguimiento para perros y gatos.</p>
+        </div>
+        <div class="panel">
+          <h2>Baño y peluquería</h2>
+          <p>Higiene básica y cuidado del pelaje con productos adecuados.</p>
+        </div>
+        <div class="panel">
+          <h2>Asesoría</h2>
+          <p>Consejos para alimentación, manejo y cuidado en casa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="card">
+      <p class="tag">Beneficios</p>
+      <h2>¿Por qué elegir VetCUN?</h2>
+      <p>
+        La atención preventiva ayuda a detectar problemas a tiempo, mejorar el bienestar y mantener una rutina de cuidado confiable.
+      </p>
+      <p>
+        Nuestro enfoque combina atención cercana, información clara y un servicio pensado para tutores responsables.
+      </p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="card">
+      <p class="tag">Recomendaciones</p>
+      <h2>Buenas prácticas para el tutor</h2>
+      <ul>
+        <li>Mantener el calendario de vacunas al día.</li>
+        <li>Realizar controles veterinarios periódicos.</li>
+        <li>Vigilar cambios en apetito, energía o comportamiento.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="card">
+      <p class="tag">Referencias APA</p>
+      <ul>
+        <li>American Veterinary Medical Association. (2024). <em>Pet care guidelines</em>. https://www.avma.org/</li>
+        <li>World Small Animal Veterinary Association. (2023). <em>Global veterinary care recommendations</em>. https://wsava.org/</li>
+        <li>Organización Mundial de Sanidad Animal. (2024). <em>Bienestar animal</em>. https://www.woah.org/</li>
+      </ul>
+      <p><a href="index.html">Volver al sitio principal</a></p>
+    </div>
+  </section>
+</body>
+</html>
